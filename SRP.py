@@ -12,7 +12,7 @@ class Refuel(car): #class specifically for refueling the car
     def __init__(self,name):
         self.name = name
     def fuel(self,name):
-        return(f"{name} is moving")
+        return(f"{name} is refueling")
 
 class Parking(car): #class specifically for parking the car
     def __init__(self,name):
