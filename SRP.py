@@ -1,28 +1,24 @@
-class Driving:
-    def drive(self,name):
-        print(f"{name} is moving")
-
-class Refuel:
-    def fuel(self,name):
-        print(f"{name} is moving")
-
-class Parking:
-    def park(self,name):
-        print(f"{name} is parked")
-
-def drive(self):
-    self.Driving.drive(self.name)
-def fuel(self):
-    self.refueling.fuel(self.name)
-def park(self):
-    self.parking.park(self.name)
-
-class car:
+class car: #The class to handle the car object
     def __init__(self,name):
         self.name = name
-        self.driving = Driving()
-        self.refuel = Refuel()
-        self.parking = Parking()
 
-car()
+class Driving(car): #class specifically for driving the car
+    def __init__(self,name):
+        self.name = name
+    def drive(self,name):
+        return(f"{name} is moving")
+
+class Refuel(car): #class specifically for refueling the car
+    def __init__(self,name):
+        self.name = name
+    def fuel(self,name):
+        return(f"{name} is moving")
+
+class Parking(car): #class specifically for parking the car
+    def __init__(self,name):
+        self.name = name
+    def park(self,name):
+        return(f"{name} is parked")
+
+
 
